@@ -1,8 +1,14 @@
 const Main = () => {
+  const mainStyle = {
+    display: 'flex',
+    justifyContent: 'space-around',
+    padding: '1rem',
+    backgroundColor: '#f8f9fa',
+  };
+
   return (
-    <div>
+    <div style={mainStyle}>
       <h1>Main Component</h1>
-      <p>This is the main content area.</p>
     </div>
   )
 }

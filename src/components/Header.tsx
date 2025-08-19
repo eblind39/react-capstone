@@ -1,11 +1,18 @@
 import logo from '../assets/images/Logo.png';
+import Nav from './Nav';
 
 const Header = () => {
+  const headerStyle = {
+    display: 'flex',
+    justifyContent: 'space-around',
+    padding: '1rem',
+    backgroundColor: '#f8f9fa',
+  };
+
   return (
-    <header>
+    <header style={headerStyle}>
       <img src={logo} alt="logo" />
-      <h1>Little Lemon</h1>
-      <p>Welcome to our restaurant!</p>
+      <Nav />
     </header>
   )
 }
