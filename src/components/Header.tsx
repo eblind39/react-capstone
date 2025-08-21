@@ -2,17 +2,15 @@ import logo from '../assets/images/Logo.png';
 import Nav from './Nav';
 
 const Header = () => {
-  const headerStyle = {
-    display: 'flex',
-    justifyContent: 'space-around',
-    padding: '1rem',
-    backgroundColor: '#f8f9fa',
-  };
-
   return (
-    <header style={headerStyle}>
-      <img src={logo} alt="logo" />
-      <Nav />
+    <header className="grid grid-cols-12 grid-rows-1 gap-4">
+      <div className="grid grid-cols-2 grid-rows-1 gap-4"></div>
+      <div className="grid grid-cols-2 grid-rows-1 gap-4">
+        <img src={logo} alt="logo" />
+      </div>
+      <div className="grid grid-cols-6 grid-rows-1 gap-4">
+        <Nav />
+      </div>
     </header>
   )
 }
